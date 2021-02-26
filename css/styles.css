@@ -27,3 +27,25 @@ body {
   text-align: center;
   padding-top: 5%;
 }
+
+#show-design {
+  display: none;
+  cursor: pointer;
+}
+#show-development {
+  display: none;
+  cursor: pointer;
+}
+#show-pm {
+  display: none;
+  cursor: pointer;
+}
+#hide-design {
+  cursor: pointer;
+}
+#hide-development {
+  cursor: pointer;
+}
+#hide-pm {
+  cursor: pointer;
+}
