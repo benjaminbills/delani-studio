@@ -49,3 +49,17 @@ body {
 #hide-pm {
   cursor: pointer;
 }
+
+/* CONTACT US SECTION */
+.contact .container {
+  width: 70%;
+}
+.contact {
+  background: url(../assets/backgrounds/c_image.jpg);
+  max-height: 600px;
+}
+
+.contact-details {
+  position: relative;
+  padding-top: 10%;
+}
