@@ -18,3 +18,12 @@ body {
 .showcase img {
   padding-top: 320px;
 }
+
+.service {
+  background: url(../assets/backgrounds/s_image.jpg) center/ cover no-repeat;
+  min-height: 300px;
+}
+.service-content {
+  text-align: center;
+  padding-top: 5%;
+}
