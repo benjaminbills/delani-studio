@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: Montserrat;
+}
+
+.showcase {
+  background: url(../assets/backgrounds/h_img.jpg) top center / cover no-repeat;
+  min-height: 1000px;
+}
+.showcase-details {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.showcase img {
+  padding-top: 320px;
+}
