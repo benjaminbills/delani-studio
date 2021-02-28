@@ -1,0 +1,50 @@
+[
+  {
+    "imageName": "work4.jpg",
+    "imageText": "Glossy Pixel",
+    "id": "work4",
+    "idText": "text4"
+  },
+  {
+    "imageName": "work3.jpg",
+    "imageText": "Ontario Secure",
+    "id": "work3",
+    "idText": "text3"
+  },
+  {
+    "imageName": "work2.jpg",
+    "imageText": "Grafitti Design",
+    "id": "work2",
+    "idText": "text2"
+  },
+  {
+    "imageName": "work5.jpg",
+    "imageText": "Dating App",
+    "id": "work5",
+    "idText": "text5"
+  },
+  {
+    "imageName": "work6.jpg",
+    "imageText": "Dj Mixer",
+    "id": "work6",
+    "idText": "text6"
+  },
+  {
+    "imageName": "work7.jpg",
+    "imageText": "Burned",
+    "id": "work7",
+    "idText": "text7"
+  },
+  {
+    "imageName": "work8.jpg",
+    "imageText": "Baliey Roger",
+    "id": "work8",
+    "idText": "text8"
+  },
+  {
+    "imageName": "work1.jpg",
+    "imageText": "BBC App",
+    "id": "work1",
+    "idText": "text1"
+  }
+]

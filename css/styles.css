@@ -63,3 +63,10 @@ body {
   position: relative;
   padding-top: 10%;
 }
+/* PORTFOLIO SECTION */
+
+.portfolio-image {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
