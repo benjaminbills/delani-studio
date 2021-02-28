@@ -10,7 +10,7 @@ body {
   min-height: 1000px;
 }
 .showcase-details {
-  font-size: large;
+  font-size: small;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,8 +27,9 @@ body {
 .service-content {
   text-align: center;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
-
+/* PORTFOLIO SECTION */
 #show-design {
   display: none;
   cursor: pointer;
@@ -65,7 +66,8 @@ body {
 .portfolio-image {
   position: relative;
   cursor: pointer;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  padding-left: 5px;
 }
 .portfolio-text {
   display: none;
