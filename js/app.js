@@ -1,26 +1,18 @@
 $(document).ready(function () {
-  $("#hide-design").click(function () {
-    $("#hide-design").hide();
-    $("#show-design").show();
-  });
-  $("#show-design").click(function () {
-    $("#hide-design").show();
-    $("#show-design").hide();
-  });
-  $("#hide-development").click(function () {
-    $("#hide-development").hide();
-    $("#show-development").show();
-  });
-  $("#show-development").click(function () {
-    $("#hide-development").show();
-    $("#show-development").hide();
-  });
-  $("#hide-pm").click(function () {
-    $("#hide-pm").hide();
-    $("#show-pm").show();
-  });
-  $("#show-pm").click(function () {
-    $("#hide-pm").show();
-    $("#show-pm").hide();
-  });
+  let showContents = ["#show-design", "#show-development", "#show-pm"];
+
+  let hideContents = ["#hide-design", "#hide-development", "#hide-pm"];
+
+  for (let i = 0; i < hideContents.length; i++) {
+    $(hideContents[i]).click(function () {
+      $(hideContents[i]).hide();
+      $(showContents[i]).show();
+    });
+  }
+  for (let i = 0; i < showContents.length; i++) {
+    $(showContents[i]).click(function () {
+      $(hideContents[i]).show();
+      $(showContents[i]).hide();
+    });
+  }
 });
