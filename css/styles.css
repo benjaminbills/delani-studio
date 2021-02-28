@@ -50,10 +50,6 @@ body {
   cursor: pointer;
 }
 
-/* CONTACT US SECTION */
-.contact .container {
-  width: 70%;
-}
 .contact {
   background: url(../assets/backgrounds/c_image.jpg);
   max-height: 600px;
@@ -69,4 +65,16 @@ body {
   position: relative;
   cursor: pointer;
   padding-bottom: 15px;
+}
+
+/* CONTACT US SECTION */
+.contact .container {
+  width: 70%;
+}
+.form-control:focus,
+.form-control:active {
+  background: transparent;
+}
+.form-control {
+  background: transparent;
 }
