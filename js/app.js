@@ -36,16 +36,4 @@ $(document).ready(function () {
         });
     });
   });
-  $("#contact-form").submit(function (e) {
-    e.preventDefault();
-    let name = $("#name").val();
-    let email = $("#email").val();
-    let message = $("#message").val();
-    let url = $(this).attr("action");
-    $.post(url, { name: name, email: email, message: message }).done(function (
-      data
-    ) {
-      alert(`${data.name} your message has been succefully delivered`);
-    });
-  });
 });
