@@ -36,4 +36,29 @@ $(document).ready(function () {
         });
     });
   });
+  // $("#contact-form").submit(function (e) {
+  //   e.preventDefault();
+  //   let name = $("#name").val();
+  //   alert(`${name} your message has been succefully delivered`);
+  // });
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+  $("#contact-form").submit(function (event) {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": event.target.getAttribute("name"),
+        ...name,
+      }),
+    })
+      .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  });
 });
