@@ -36,29 +36,16 @@ $(document).ready(function () {
         });
     });
   });
-  // $("#contact-form").submit(function (e) {
-  //   e.preventDefault();
-  //   let name = $("#name").val();
-  //   alert(`${name} your message has been succefully delivered`);
-  // });
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-  $("#contact-form").submit(function (event) {
+  $("#contact-form").submit(function (e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": event.target.getAttribute("name"),
-        ...name,
-      }),
-    })
-      .then(() => navigate("/thank-you/"))
-      .catch((error) => alert(error));
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let message = $("#message").val();
+    let url = $(this).attr("action");
+    $.post(url, { name: name, email: email, message: message }).done(function (
+      data
+    ) {
+      alert(`${data.name} your message has been succefully delivered`);
+    });
   });
 });
