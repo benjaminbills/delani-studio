@@ -67,7 +67,19 @@ body {
   cursor: pointer;
   padding-bottom: 15px;
 }
-
+.portfolio-text {
+  display: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0 2px black;
+}
 /* CONTACT US SECTION */
 .contact .container {
   width: 70%;
