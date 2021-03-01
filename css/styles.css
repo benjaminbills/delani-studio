@@ -10,7 +10,7 @@ body {
   min-height: 1000px;
 }
 .showcase-details {
-  font-size: small;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,7 +29,7 @@ body {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-/* PORTFOLIO SECTION */
+/* WHAT WE DO */
 #show-design {
   display: none;
   cursor: pointer;

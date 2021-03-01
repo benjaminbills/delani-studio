@@ -18,7 +18,7 @@ $(document).ready(function () {
   $.getJSON("imageData.json", function (data) {
     $.each(data, function (i, image) {
       $("div#portfolio").append(
-        `<div id=${image.id}  class="col-3 portfolio-image"> 
+        `<div id=${image.id}  class="col-4 col-sm-3 portfolio-image"> 
           <img class="img-fluid" src="assets/portfolio/${image.imageName}" alt="" /> 
           <div class="overlay">
             <p class="portfolio-text" id=${image.idText} >
