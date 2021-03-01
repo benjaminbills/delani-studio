@@ -69,10 +69,28 @@ body {
   padding-bottom: 20px;
   padding-left: 5px;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+.portfolio-image:hover .overlay {
+  opacity: 0.8;
+}
 .portfolio-text {
   display: none;
-  color: white;
+  color: #e8eae6;
+  mix-blend-mode: difference;
   font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -92,4 +110,8 @@ body {
 }
 .form-control {
   background: transparent;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: white;
 }
