@@ -36,4 +36,15 @@ $(document).ready(function () {
         });
     });
   });
+  $("#contact-form").submit(function (e) {
+    e.preventDefault();
+    let name = $("input#name").val();
+    Swal.fire({
+      icon: "success",
+      text: `Hey ${name}, We will respond to your message as soon as possible. Thank you`,
+    });
+    $("#contact-form").each(function () {
+      this.reset();
+    });
+  });
 });
